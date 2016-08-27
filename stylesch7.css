@@ -1,0 +1,11 @@
+image.small {textdecoration: none;}
+
+div#sizes a img.large {height:0; width:0;}
+/* "sizes" is the id, "large" is the class */
+
+div#sizes a:hover img.large {position:absolute; top:68px;
+							left:170px; height:389px;
+							width: 500px;}
+
+p	{margin-bottom: 26px; margin-top: 26px; font-sie:small;
+	font-family: Verdana, Arial; color: #100375;}

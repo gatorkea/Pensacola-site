@@ -1,0 +1,31 @@
+table {font-family: Arial;
+	   background-color: black;}
+th	{background-color: red;
+	 border-radius: 15px;
+	 color: yellow;
+	 padding:10px;}
+td	{background-color: #3399cc;
+	 padding: 5px;
+	 color: white;
+	 border-radius: 15px;}
+	
+body	{font-family: Arial, Verdana, Garamond;
+		font-size: 11pt;} 
+
+h1, h2, h3	{color: #020390;
+				margin-left: 150px;}
+		
+
+
+p		{float: left;
+			margin-left: 10px;}
+						
+img.align-left {float: left;
+				margin-left: 150px;
+				margin-right: 5px;}
+
+img.align-right {float: right;
+				margin-left: 5px;
+				margin-right: 5px;}	
+				
+html				{background-color: #D0D0D0}

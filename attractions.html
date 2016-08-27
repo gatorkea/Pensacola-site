@@ -1,0 +1,251 @@
+<!DOCTYPE HTML>
+<html style = "background-color:#D0D0D0">
+<head>
+<meta charset="utf-8" />
+<title>Attractions</title>
+<script type="text/javascript">
+<!--Hide from old browsers
+function overButton(img)
+{
+	buttonImg = "pen_" + img + "_over.jpg"
+	document.getElementById(img).src=buttonImg
+}
+
+function downButton(img)
+{
+	buttonImg = "pen_" + img + "_down.jpg"
+	document.getElementById(img).src=buttonImg
+}
+
+function upButton(img)
+{
+	buttonImg = "pen_" + img + "_up.jpg"
+	document.getElementById(img).src=buttonImg
+}
+
+var randomImage = new Array("", "gulfarium.jpg", "fort_pickens.jpg", "fishing.jpg")
+
+function rndimage()
+{
+	rndnumsize = randomImage.length-1
+	var randomnumber = Math.ceil(Math.random()*rndnumsize)
+	document.getElementById("dailyImage").src=randomImage[randomnumber]
+}
+
+-->
+</script>
+<link rel="stylesheet" type = "text/css" href = "test_3_pics.css"/>
+<style type="text/css">
+<!--
+a		{text-decoration: none;
+		color: #020390;}
+		
+body	{font-family: Arial, Verdana, Garamond;
+		font-size: 11pt;} 
+
+h1, h2, h3	{color: #020390;
+				margin-left: 150px;}
+		
+
+
+
+						
+img.align-left {float: left;
+				margin-left: 135px;
+				margin-right: 5px;}
+
+img.align-right {float: right;
+				margin-left: 5px;
+				margin-right: 5px;}	
+
+#menubar {background-color:#303032;
+			  margin-left: 144px;
+			  margin-right: 143px;
+			  margin-top: -5px;
+			  margin-bottom:20px;
+			  color:blue;
+			  font-size:x-large;
+			  height: 75px}
+			  
+	.menu	{float: left; padding: 0.8em 3em 0.1em 0.5em;
+			 cursor: default}
+	
+	.menu2	{list-style:none;
+			 float:left;
+			 margin-left:143px}
+	
+	.menu2 li {display:inline-block;
+			   margin-left:20px}
+	
+	.menu ul {display: none;  background-color:white;
+			  list-style: none;
+			  margin: 2px 5px 150px 0px;}
+	.menu ul li {display:block; font-size:large;
+			     padding:0.2em}
+				 
+	div.menu:hover ul	{margin: 0; padding: 0; display:block;
+						 background-color:white; color:#303032}
+	div.menu ul li: hover {background-color: #cccccc}
+	
+	.whitepipe {color: white}
+	
+	p.box		{width: 400px; margin-left:20px;margin-top: 50px;
+				 border-radius: 5px; background-color: white;
+				 padding: 10px; color: #303032}
+	img.posit 	{position: relative; left: 460px; top: -270px}	
+
+ul	{list-style:none}	
+
+li	{display:inline-block}	
+
+#trailImg {
+	position: absolute;
+	visibility: hidden;
+	display: inline-block;
+	}
+#trailImg2 {
+	position:absolute;
+	visibility: hidden;
+	display:inline-block;
+	}
+	
+#trailImg3 {
+	position: absolute;
+	visibility: hidden;
+	display:inline-block;
+	}
+
+#trailImg4 {
+	position: absolute;
+	visibility: hidden;
+	display: inline-block;
+	}
+	
+.captionText {
+	background-color: #006600;
+	padding: 5px;
+	margin-left:20%;
+	border: 2px solid black;
+	-webkit-border-radius: 20px;
+	-moz-border-radius:20px;
+	border-radius:20px;
+	-webkit-box-shadow: 3px 3px 4px #000;
+	-moz-box-shadwo: 3px 3px 4px #000;
+	box-shadow: 3px 3px 4px #000;
+	width: 250px;
+	font-weight:bolder;
+	color:white;
+	}
+
+-->
+</style>
+</head>
+<header style = "text-align: center">
+<a id="banner"></a>
+	<img src="pensacola-bannerv3.jpg" width= "1600" height= "571" alt = "Pensacola"/>
+<div id = "buttonbar">
+<ul class = "menu2">
+	<a href ="Underground Pensacola.html"><li><img src = "pen_home_up.jpg" width = "198" height = "92" id = "home" alt = "home" onMouseOver = "overButton('home')" onMouseDown = "downButton('home')"
+	onMouseUp = "upButton('home')" onMouseOut = "upButton('home')"></li></a>
+	
+	<a href ="activities_v2.html"><li><img src = "pen_activities_up.jpg" width = "198" height = "92" id = "activities" alt = "nature center" onMouseOver = "overButton('activities')" onMouseDown = "downButton('activities')"
+	onMouseUp = "downButton('activities')" onMouseOut = "upButton('activities')"/></li></a>
+	
+	<a href ="music_v2.html"><li><img src = "pen_music_up.jpg" width = "198" height = "92" id = "music" alt = "nature center" onMouseOver = "overButton('music')" onMouseDown = "downButton('music')"
+	onMouseUp = "downButton('music')" onMouseOut = "upButton('music')"/></li></a>
+	
+	<a href ="dining_v2.html"><li><img src = "pen_dining_up.jpg" width = "198" height = "92" id = "dining" alt = "nature center" onMouseOver = "overButton('dining')" onMouseDown = "downButton('dining')"
+	onMouseUp = "downButton('dining')" onMouseOut = "upButton('dining')"/></li></a>
+	
+	<a href ="attractions.html"><li><img src = "pen_attractions_up.jpg" width = "198" height = "92" id = "attractions" alt = "nature center" onMouseOver = "overButton('attractions')" onMouseDown = "downButton('attractions')"
+	onMouseUp = "downButton('attractions')" onMouseOut = "upButton('attractions')"/></li></a>
+	
+	<a href ="contactus_v2.html"><li><img src = "pen_contact_up.jpg" width = "198" height = "92" id = "contact" alt = "nature center" onMouseOver = "overButton('contact')" onMouseDown = "downButton('contact')"
+	onMouseUp = "downButton('contact')" onMouseOut = "upButton('contact')"/></li></a>		
+</ul>
+</div>	
+
+<!--Top Menu 
+<div id="menubar">
+	<div id="menu1" class="menu">Activities/Events &nbsp; &nbsp;<span class="whitepipe"> &nbsp; | </span>
+	<ul>
+		<li><a href="activities_v2.html">McGuires Run</a></li>
+		<li><a href="activities_v2.html">Blue Angels</a></li>
+		<li><a href="activities_v2.html">Beach</a></li>
+    </ul>
+	</div>
+
+	<div id="menu2" class="menu">Music/Dance &nbsp; &nbsp; &nbsp;<span class="whitepipe"> &nbsp; | </span>
+	<ul>
+    	<li><a href="music_v2.html">Seville</a></li>
+    	<li><a href="music_v2.html">Blues Traveler</a></li>
+		<li><a href="music_v2.html">Insane Clown Posse</a></li>
+    </ul>
+	</div>
+
+	<div id="menu3" class="menu">Dining &nbsp; &nbsp; &nbsp;<span class="whitepipe"> &nbsp; | </span>
+	<ul>
+    	<li><a href="dining_v2.html">Rodizio Grill</a></li>
+    	<li><a href="dining_v2.html">Coach N Four</a></li>
+		<li><a href="dining_v2.html">Fish House</a></li>
+    </ul>
+	</div>
+	
+	<div id="menu4" class="menu">Attractions &nbsp; &nbsp; &nbsp;<span class="whitepipe"> &nbsp; | </span>
+	<ul>
+    	<li><a href="dining_v2.html">Dolphins</a></li>
+    	<li><a href="dining_v2.html">Fort Pickens</a></li>
+		<li><a href="dining_v2.html">Fishing</a></li>
+    </ul>
+	</div>
+	
+	<div id="menu5" class="menu"><a href = "contactus_v2.html"</a>Contact Us
+	<ul>
+    </ul>
+	</div>
+</div>
+</header>
+<!----------------------------------------------------------------------------->
+</header>
+<p style="float:right; margin-right:150px; color:#FF0000"><a href ="test2_v2.html">Back to Homepage</a></p>
+<!--Images-->
+<body onLoad = "rndimage()">
+<p><img src="gulfarium.jpg" alt="random daily image" id="dailyImage"></p>
+<!--<div id="sizes">
+<p><a>
+	<img class="small" src="gulfarium.jpg" width="150" height="110" alt="Whale 1" />
+	<img class="large" src="gulfarium.jpg" width="150" height="110" alt="Whale 1" />
+</a></p>
+<p><a>
+		<img class="small" src="fort_pickens.jpg" width="150" height="110" alt="Whale 2" />
+		<img class="large" src="fort_pickens.jpg" width="150" height="110" alt="Whale 2" />
+</a></p>
+<p><a>
+	<img class="small" src="fishing.jpg" width="150" height="110" alt="Whale 3" />
+	<img class="large" src="fishing.jpg" width="150" height="110" alt="Whale 3" />
+</a></p>
+</div>
+
+</body>
+<br style = "clear: both">
+-->
+<!--Bottom Menu ----------------------------------------------------------------------->
+<div id="menubar">
+	<div id="menu1" class="menu"><a href= "activities_v2.html">Activities/Events</a> &nbsp; &nbsp;<span class="whitepipe"> &nbsp; | </span>
+	</div>
+
+	<div id="menu2" class="menu"><a href="music_v2.html">Music/Dance</a> &nbsp; &nbsp; &nbsp;<span class="whitepipe"> &nbsp; | </span>
+	</div>
+
+	<div id="menu3" class="menu"><a href="dining_v2.html">Dining</a> &nbsp; &nbsp; &nbsp;<span class="whitepipe"> &nbsp; | </span>
+	</div>
+	
+	<div id="menu3" class="menu"><a href="file:///E:/HTML/final/attractions.html">Attractions</a> &nbsp; &nbsp; &nbsp;<span class="whitepipe"> &nbsp; | </span>
+	</div>
+	
+	<div id="menu4" class="menu"><a href = "contactus_v2.html"</a>Contact Us
+	</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Dining</title>
+<script type="text/javascript">
+<!--Hide from old browsers
+function copyRight() 
+{
+	var lastModDate = document.lastModified
+	var lastModDate = lastModDate.substring(0,10)
+	displayCopyRight.innerHTML = "<p style='font-size:8pt; font-weight:bold;'> The URL of this document is" + document.URL+"<br />Midwest Bridal Expo"+"<br />This document was last modified" + lastModDate+ ".</p>"
+}
+
+var phoneNum
+var fName
+var lName
+
+function validForm() 
+{
+		var phoneNum = parseFloat(contactForm.phone.value,10)
+		if (isNaN(phoneNum) || phoneNum.length < 7) 
+		{
+			alert("Please enter a phone number in the format of xxx-xxx-xxxx to recieve text messages")
+			contactForm.phone.value= ""
+			contactForm.phone.focus()
+		}
+
+
+		var fName = contactForm.firstname.value
+		if(fName.length < 1)
+		{
+			alert("Please enter your first name")
+			contactForm.firstname.value = ""
+			contactForm.firstname.focus()
+		}
+
+
+		var lName = contactForm.lastname.value
+		if(lName.length < 1)
+		{
+			alert("Please enter your last name")
+			contactForm.lastname.value = ""
+			contactForm.lastname.focus()
+		}
+		
+		var email = contactForm.emailad.value
+		var atSign = email.indexOf("@")
+		if(atSign < 0)
+		{
+			alert("Sorry,that e-mail address is not in the form of userID@ followed by provider name.Please re-enter your e-mail address")
+		}
+		else
+		{
+			alert("Thank you. Your e-mail address wil be added to our mailing list.")
+		}
+}
+
+function overButton(img)
+{
+	buttonImg = "pen_" + img + "_over.jpg"
+	document.getElementById(img).src=buttonImg
+}
+
+function downButton(img)
+{
+	buttonImg = "pen_" + img + "_down.jpg"
+	document.getElementById(img).src=buttonImg
+}
+
+function upButton(img)
+{
+	buttonImg = "pen_" + img + "_up.jpg"
+	document.getElementById(img).src=buttonImg
+}
+
+-->
+</script>
+<style type="text/css">
+<!--
+a		{text-decoration: none;
+		color: #020390;}
+
+body	{font-family: Arial, Verdana, Garamond;
+		font-size: 11pt;} 
+
+h1, h2, h3	{color: #020390;
+				margin-left: 150px;}
+		
+
+
+p		{float: left;
+			margin-left: 10px;}
+						
+img.align-left {float: left;
+				margin-left: 150px;
+				margin-right: 5px;}
+
+img.align-right {float: right;
+				margin-left: 5px;
+				margin-right: 5px;}	
+	  
+	#menubar {background-color:#303032;
+			  margin-left: 144px;
+			  margin-right: 143px;
+			  margin-top: -5px;
+			  margin-bottom:20px;
+			  color:blue;
+			  font-size:x-large;
+			  height: 75px}
+	
+	.menu2	{list-style:none;
+			 float:left;
+			 margin-left:143px}
+	
+	.menu2 li {display:inline-block;
+			   margin-left:20px}
+	
+	.menu	{float: left; padding: 0.8em 3em 0.1em 0.5em;
+			 cursor: default}
+			 
+	.menu ul {display: none;  background-color:white;
+			  list-style: none;
+			  margin: 2px 5px 150px 0px;}
+	.menu ul li {display:block; font-size:large;
+			     padding:0.2em}
+				 
+	div.menu:hover ul	{margin: 0; padding: 0; display:block;
+						 background-color:white; color:#303032}
+	div.menu ul li: hover {background-color: #cccccc}
+	
+	.whitepipe {color: white}
+	
+	p.box		{width: 400px; margin-left:20px;margin-top: 50px;
+				 border-radius: 5px; background-color: white;
+				 padding: 10px; color: #303032}
+	img.posit 	{position: relative; left: 460px; top: -270px}		
+
+ul	{list-style:none}	
+
+li	{display:inline-block}
+-->
+</style>
+<link rel="stylesheet" type="text/css" href="subpage.css" />
+</head>
+<header style = "text-align: center">
+<a id="banner"></a>
+	<img src="pensacola-bannerv3.jpg" width= "1600" height= "571" alt = "Pensacola"/>
+<div id = "buttonbar">
+<ul class = "menu2">
+	<a href ="Underground Pensacola.html"><li><img src = "pen_home_up.jpg" width = "198" height = "92" id = "home" alt = "home" onMouseOver = "overButton('home')" onMouseDown = "downButton('home')"
+	onMouseUp = "upButton('home')" onMouseOut = "upButton('home')"></li></a>
+	
+	<a href ="activities_v2.html"><li><img src = "pen_activities_up.jpg" width = "198" height = "92" id = "activities" alt = "nature center" onMouseOver = "overButton('activities')" onMouseDown = "downButton('activities')"
+	onMouseUp = "downButton('activities')" onMouseOut = "upButton('activities')"/></li></a>
+	
+	<a href ="music_v2.html"><li><img src = "pen_music_up.jpg" width = "198" height = "92" id = "music" alt = "nature center" onMouseOver = "overButton('music')" onMouseDown = "downButton('music')"
+	onMouseUp = "downButton('music')" onMouseOut = "upButton('music')"/></li></a>
+	
+	<a href ="dining_v2.html"><li><img src = "pen_dining_up.jpg" width = "198" height = "92" id = "dining" alt = "nature center" onMouseOver = "overButton('dining')" onMouseDown = "downButton('dining')"
+	onMouseUp = "downButton('dining')" onMouseOut = "upButton('dining')"/></li></a>
+	
+	<a href ="attractions.html"><li><img src = "pen_attractions_up.jpg" width = "198" height = "92" id = "attractions" alt = "nature center" onMouseOver = "overButton('attractions')" onMouseDown = "downButton('attractions')"
+	onMouseUp = "downButton('attractions')" onMouseOut = "upButton('attractions')"/></li></a>
+	
+	<a href ="contactus_v2.html"><li><img src = "pen_contact_up.jpg" width = "198" height = "92" id = "contact" alt = "nature center" onMouseOver = "overButton('contact')" onMouseDown = "downButton('contact')"
+	onMouseUp = "downButton('contact')" onMouseOut = "upButton('contact')"/></li></a>		
+</ul>
+</div>	
+</header>
+
+<body onload = "copyRight()">
+<p style="float:right; margin-right:150px; color:#FF0000"><a href ="test2_v2.html">Back to Homepage</a></p>
+<br style = "clear: both">
+<h1>Contact Us</h1>
+<form id = "contactForm">
+<div style = "margin-left:150px; width:600px">
+	<fieldset><legend>Customer Information</legend>
+	<p>First name:</br><input name="firstname" type= "text" size = "25"/>
+	</br></br>
+	Last name:</br><input name="lastname" type= "text" size = "25"/>
+	</br></br>
+	E-mail Address:</br><input name="emailad" type= "text" size = "25" />
+	</br></br>
+	Telephone Number:</br><input name="phone" type= "text" size = "25"/>
+	</br></br>
+	Comments:</br><textarea name = "other" rows= "10" cols="50"></textarea>
+	</br></br>
+	<input type = "submit" value = "Submit" onClick = "validForm()"/>&nbsp<input type = "reset" value = "Clear form" /></p>
+	</fieldset>
+</div>
+</form>
+</body>
+<!--Bottom Menu ----------------------------------------------------------------------->
+<div id="menubar">
+	<div id="menu1" class="menu"><a href= "activities_v2.html">Activities/Events</a> &nbsp; &nbsp;<span class="whitepipe"> &nbsp; | </span>
+	</div>
+
+	<div id="menu2" class="menu"><a href="music_v2.html">Music/Dance</a> &nbsp; &nbsp; &nbsp;<span class="whitepipe"> &nbsp; | </span>
+	</div>
+
+	<div id="menu3" class="menu"><a href="dining_v2.html">Dining</a> &nbsp; &nbsp; &nbsp;<span class="whitepipe"> &nbsp; | </span>
+	</div>
+	
+	<div id="menu3" class="menu"><a href="file:///E:/HTML/final/attractions.html">Attractions</a> &nbsp; &nbsp; &nbsp;<span class="whitepipe"> &nbsp; | </span>
+	</div>
+	
+	<div id="menu4" class="menu"><a href = "contactus_v2.html"</a>Contact Us
+	</div>
+</div>
+<hr style = "margin-left:143px; margin-right:143px;border-top: 1px dashed #020390;">
+<div style ="margin-left:140px" id="displayCopyRight">
+</div>

@@ -1,0 +1,391 @@
+<!DOCTYPE HTML>
+<html style = "background-color:#D0D0D0">
+<head>
+<meta charset="utf-8" />
+<title>Activities</title>
+<script type="text/javascript">
+<!--Hide from old browsers
+
+	var today = new Date()
+	var dayofweek = today.toLocaleString()
+	dayLocate = dayofweek.indexOf(" ")
+	weekDay = dayofweek.substring(0,dayLocate)
+	newDay = dayofweek.substring(dayLocate)
+	dateLocate = newDay.indexOf(",")
+	monthDate = newDay.substring(0, dateLocate+1)
+	yearLocate = dayofweek.indexOf("2015")
+	year = dayofweek.substr(yearLocate, 4)
+	
+	var mcGrun = new Date("March 19, 2016")
+	var blueAngels = new Date("November 6, 2016")
+	
+	var daysToGo = mcGrun.getTime()-today.getTime()
+	var daysToGoBA = blueAngels.getTime()-today.getTime()
+	var daysToMcGrun = Math.ceil(daysToGo/(1000*60*60*24))
+	var daysToBA = Math.ceil(daysToGoBA/(1000*60*60*24))
+	var adMsg="Today is "+weekDay+" "+monthDate+" "+year+". We have "+daysToMcGrun+" days until the McGuires run."
+	var bMsg = "Today is "+weekDay+" "+monthDate+" "+year+". We have "+daysToBA+" days until the airshow."
+	var beginPos=0
+function scrollingMsg1() 
+{
+	msgForm1.scrollingMsg1.value=adMsg.substring(beginPos,adMsg.length) + adMsg.substring(0,beginPos)
+	beginPos = beginPos+1
+	if (beginPos>adMsg.length) {
+		beginPos=0
+		}
+	window.setTimeout("scrollingMsg1()", 300)
+}
+
+function scrollingMsg2() 
+{
+	msgForm2.scrollingMsg2.value=bMsg.substring(beginPos,bMsg.length) + bMsg.substring(0,beginPos)
+	beginPos = beginPos+1
+	if (beginPos>bMsg.length) {
+		beginPos=0
+		}
+	window.setTimeout("scrollingMsg2()", 300)
+}
+
+function copyRight() {
+	var lastModDate = document.lastModified
+	var lastModDate = lastModDate.substring(0,10)
+	displayCopyRight.innerHTML = "<p style='font-size:8pt; font-weight:bold;'> The URL of this document is" + document.URL+"<br />Midwest Bridal Expo"+"<br />This document was last modified" + lastModDate+ ".</p>"
+}
+
+function overButton(img)
+{
+	buttonImg = "pen_" + img + "_over.jpg"
+	document.getElementById(img).src=buttonImg
+}
+
+function downButton(img)
+{
+	buttonImg = "pen_" + img + "_down.jpg"
+	document.getElementById(img).src=buttonImg
+}
+
+function upButton(img)
+{
+	buttonImg = "pen_" + img + "_up.jpg"
+	document.getElementById(img).src=buttonImg
+}
+
+function popupCaption(evnt, currElement)
+{
+	var imgShow = "activities_" +currElement+".jpg"
+	var documentObj=document.getElementById(currElement).style
+		if(currElement!=0)
+		{
+		var state=documentObj.visibility
+			if(state=="visible" || state =="show")
+			{
+			documentObj.visibility="hidden"
+			document.getElementById("activityImage").src="activities_mcgrun.jpg"
+			}
+		else{
+			documentObj.visibility="visible"
+			document.getElementById("activityImage").src=imgShow
+			}
+		}
+}
+
+function popupCaption2(evnt, currElement)
+{
+	var imgShow = "activities_" +currElement+".jpg"
+	var documentObj=document.getElementById(currElement).style
+		if(currElement!=0)
+		{
+		var state=documentObj.visibility
+			if(state=="visible" || state =="show")
+			{
+			documentObj.visibility="hidden"
+			document.getElementById("activityImage2").src="activities_ba.jpg"
+			}
+		else{
+			documentObj.visibility="visible"
+			document.getElementById("activityImage2").src=imgShow
+			}
+		}
+}
+
+function popupCaption3(evnt, currElement)
+{
+	var imgShow = "activities_" +currElement+".jpg"
+	var documentObj=document.getElementById(currElement).style
+		if(currElement!=0)
+		{
+		var state=documentObj.visibility
+			if(state=="visible" || state =="show")
+			{
+			documentObj.visibility="hidden"
+			document.getElementById("activityImage3").src="activities_beach.jpg"
+			}
+		else{
+			documentObj.visibility="visible"
+			document.getElementById("activityImage3").src=imgShow
+			}
+		}
+}
+
+
+-->
+</script>
+<style type="text/css">
+<!--
+a		{text-decoration: none;
+		color: #020390;}
+
+body	{font-family: Arial, Verdana, Garamond;
+		font-size: 11pt;} 
+
+h1, h2, h3	{color: #020390;
+				margin-left: 150px;}
+		
+
+
+p		{float: left;
+			margin-left: 10px;}
+						
+img.align-left {float: left;
+				margin-left: 135px;
+				margin-right: 5px;}
+
+img.align-right {float: right;
+				margin-left: 5px;
+				margin-right: 5px;}	
+
+#menubar {background-color:#303032;
+			  margin-left: 144px;
+			  margin-right: 143px;
+			  margin-top: -5px;
+			  margin-bottom:20px;
+			  color:blue;
+			  font-size:x-large;
+			  height: 75px}
+			  
+	.menu	{float: left; padding: 0.8em 3em 0.1em 0.5em;
+			 cursor: default}
+	
+	.menu2	{list-style:none;
+			 float:left;
+			 margin-left:143px}
+	
+	.menu2 li {display:inline-block;
+			   margin-left:20px}
+			   
+	.menu ul {display: none;  background-color:white;
+			  list-style: none;
+			  margin: 2px 5px 150px 0px;}
+	.menu ul li {display:block; font-size:large;
+			     padding:0.2em}
+				 
+	div.menu:hover ul	{margin: 0; padding: 0; display:block;
+						 background-color:white; color:#303032}
+	div.menu ul li: hover {background-color: #cccccc}
+	
+	.whitepipe {color: white}
+	
+	p.box		{width: 400px; margin-left:20px;margin-top: 50px;
+				 border-radius: 5px; background-color: white;
+				 padding: 10px; color: #303032}
+	img.posit 	{position: relative; left: 460px; top: -270px}	
+
+ul	{list-style:none}	
+
+li	{display:inline-block}	
+
+#activityImage {
+	float: left;
+	margin-left: 135px;
+	margin-right: 5px;}
+	
+#activityImage2 {
+	float: left;
+	margin-left: 135px;
+	margin-right: 5px;}
+
+#spd {
+position: absolute;
+visibility: hidden;
+display: inline-block;}
+	
+	
+#nas {
+position: absolute;
+visibility: hidden;
+display: inline-block;}
+
+#earth {
+position: absolute;
+visibility: hidden;
+display: inline-block;}
+
+.captionText {
+	background-color: #0000FF;
+	padding: 5px;
+	margin-left:20%;
+	border: 2px solid black;
+	-webkit-border-radius: 20px;
+	-moz-border-radius:20px;
+	border-radius:20px;
+	-webkit-box-shadow: 3px 3px 4px #000;
+	-moz-box-shadow: 3px 3px 4px #000;
+	box-shadow: 3px 3px 4px #000;
+	width: 250px;
+	font-weight:bolder;
+	color:white;
+	}
+	
+	
+-->
+</style>
+</head>
+<header style = "text-align: center">
+<a id="banner"></a>
+	<img src="pensacola-bannerv3.jpg" width= "1600" height= "571" alt = "Pensacola"/>
+	
+<div id = "buttonbar">
+<ul class = "menu2">
+	<a href ="Underground Pensacola.html"><li><img src = "pen_home_up.jpg" width = "198" height = "92" id = "home" alt = "home" onMouseOver = "overButton('home')" onMouseDown = "downButton('home')"
+	onMouseUp = "upButton('home')" onMouseOut = "upButton('home')"></li></a>
+	
+	<a href ="activities_v2.html"><li><img src = "pen_activities_up.jpg" width = "198" height = "92" id = "activities" alt = "nature center" onMouseOver = "overButton('activities')" onMouseDown = "downButton('activities')"
+	onMouseUp = "downButton('activities')" onMouseOut = "upButton('activities')"/></li></a>
+	
+	<a href ="music_v2.html"><li><img src = "pen_music_up.jpg" width = "198" height = "92" id = "music" alt = "nature center" onMouseOver = "overButton('music')" onMouseDown = "downButton('music')"
+	onMouseUp = "downButton('music')" onMouseOut = "upButton('music')"/></li></a>
+	
+	<a href ="dining_v2.html"><li><img src = "pen_dining_up.jpg" width = "198" height = "92" id = "dining" alt = "nature center" onMouseOver = "overButton('dining')" onMouseDown = "downButton('dining')"
+	onMouseUp = "downButton('dining')" onMouseOut = "upButton('dining')"/></li></a>
+	
+	<a href ="attractions.html"><li><img src = "pen_attractions_up.jpg" width = "198" height = "92" id = "attractions" alt = "nature center" onMouseOver = "overButton('attractions')" onMouseDown = "downButton('attractions')"
+	onMouseUp = "downButton('attractions')" onMouseOut = "upButton('attractions')"/></li></a>
+	
+	<a href ="contactus_v2.html"><li><img src = "pen_contact_up.jpg" width = "198" height = "92" id = "contact" alt = "nature center" onMouseOver = "overButton('contact')" onMouseDown = "downButton('contact')"
+	onMouseUp = "downButton('contact')" onMouseOut = "upButton('contact')"/></li></a>		
+</ul>
+</div>	
+	
+<!--
+<div id="menubar">
+	<div id="menu1" class="menu">Activities/Events &nbsp; &nbsp;<span class="whitepipe"> &nbsp; | </span>
+	<ul>
+		<li><a href="activities_v2.html">McGuires Run</a></li>
+		<li><a href="activities_v2.html">Blue Angels</a></li>
+		<li><a href="activities_v2.html">Beach</a></li>
+    </ul>
+	</div>
+
+	<div id="menu2" class="menu">Music/Dance &nbsp; &nbsp; &nbsp;<span class="whitepipe"> &nbsp; | </span>
+	<ul>
+    	<li><a href="music_v2.html">Seville</a></li>
+    	<li><a href="music_v2.html">Blues Traveler</a></li>
+		<li><a href="music_v2.html">Insane Clown Posse</a></li>
+    </ul>
+	</div>
+
+	<div id="menu3" class="menu">Dining &nbsp; &nbsp; &nbsp;<span class="whitepipe"> &nbsp; | </span>
+	<ul>
+    	<li><a href="dining_v2.html">Rodizio Grill</a></li>
+    	<li><a href="dining_v2.html">Coach N Four</a></li>
+		<li><a href="dining_v2.html">Fish House</a></li>
+    </ul>
+	</div>
+	
+	<div id="menu4" class="menu"><a href = "attractions.html">Attractions</a> &nbsp; &nbsp; &nbsp;<span class="whitepipe"> &nbsp; | </span>
+	<ul>
+    	<li><a href="dining_v2.html">Dolphins</a></li>
+    	<li><a href="dining_v2.html">Fort Pickens</a></li>
+		<li><a href="dining_v2.html">Fishing</a></li>
+    </ul>
+	</div>
+	
+	<div id="menu5" class="menu"><a href = "contactus_v2.html"</a>Contact Us
+	<ul>
+    </ul>
+	</div>
+</div>
+</header>
+-->
+</header>
+<p style="float:right; margin-right:150px; color:#FF0000"><a href ="test2_v2.html">Back to Homepage</a></p>
+<br style = "clear: both">
+<h1>Activities/Events</h1>
+<body onload="copyRight();scrollingMsg1();scrollingMsg2()">
+<br style = "clear: right">
+
+<br style = "clear: right">
+
+<h3>Mcguires Run</h3>
+
+<form id="msgForm1" style = "margin-left:140px">
+	<p style="text-align:center"><input type="text" name="scrollingMsg1" size="55" /> </p>
+</form>
+
+<p style = "margin-right:150px"><img  src="activities_mcgrun.jpg" id = "activityImage" width= "384" height= "216" alt = "Mcguires run"/>
+		The 38th Annual <a href="http://werunwild.com/events/event/mcguires-5k/">McGuire’s</a> St. <a href = "#" onMouseOver= "popupCaption(event,'spd')" onMouseOut ="popupCaption(event,'spd')">
+		Patrick’s Day</a> 5k Run starts and finishes at McGuire’s Irish Pub 
+		in downtown Pensacola.Participants must be able to run or walk the 3.1 mile (5k) course in under 
+		one hour. As this is a Prediction Run participants can run for speed and/or their predicted time. 
+		Each Runner/Walker predicts how long it will take them to complete the course, the finishers that 
+		come closest to their prediction wins.</p>
+<div id="spd" class ="captionText">
+Happy Saint Patrick's day!
+</div>
+
+<br style="clear:left;" />
+<div style="margin-top:20px;margin-bottom:20px;margin-left:142px;color:red" id="displayCountDownBA">
+</div></br></br></br>
+
+<h3>Blue Angels</h3>
+<form id="msgForm2" style = "margin-left:140px">
+	<p style="text-align:center"><input type="text" name="scrollingMsg2" size="55" /> </p>
+</form>
+
+<p style = "margin-right:150px"><img src="activities_ba.jpg" id = "activityImage2" width= "384" height= "216" alt = "Blue Angels"/>
+		Come watch the <a href="http://www.visitpensacola.com/landing/blue-angels">Blue Angels</a> 
+		fly. The world-famous Blue Angels are based at NAS Pensacola, and can be seen practicing over 
+		the Museum at <a href = "#" onMouseOver= "popupCaption2(event,'nas')" onMouseOut ="popupCaption2(event,'nas')">NAS Pensacola</a> 
+		most Tuesday and Wednesday mornings from March to November. Practices 
+		typically begin at 11:30 a.m.(Central Time), and last about 75 minutes. Admission to practice is 
+		FREE and open to the public.</p>
+<div id="nas" class ="captionText">
+Come see the Blue Angels fly at NAS Naval air station!
+</div>
+<br style="clear:left;" />
+
+<h3>Beach</h3>
+<p style = "margin-right:150px"><img class="align-left" src="activities_beach.jpg" id = "activityImage3" width= "384" height= "216" alt = "Pensacola Beach"/>
+		Enjoy some of the whitest <a href="http://www.visitpensacolabeach.com/">beaches</a> in 
+		the <a href = "#" onMouseOver= "popupCaption3(event,'earth')" onMouseOut ="popupCaption3(event,'earth')">world</a>, your 
+		family and friends can experience all the Florida Gulf Coast has to offer. Pensacola Beach is world famous 
+		for its sugar-white sand beaches and emerald-green waters. In fact, Pensacola Beach was recently selected 
+		as one of TripAdvisor's Top 25 Beaches in the U.S.</p>		
+<div id="earth" class ="captionText">
+Come visit earth while it's still breathing!
+</div>
+
+<br style= "clear:left">
+<!--Bottom Menu ----------------------------------------------------------------------->
+<div id="menubar">
+	<div id="menu1" class="menu"><a href= "activities_v2.html">Activities/Events</a> &nbsp; &nbsp;<span class="whitepipe"> &nbsp; | </span>
+	</div>
+
+	<div id="menu2" class="menu"><a href="music_v2.html">Music/Dance</a> &nbsp; &nbsp; &nbsp;<span class="whitepipe"> &nbsp; | </span>
+	</div>
+
+	<div id="menu3" class="menu"><a href="dining_v2.html">Dining</a> &nbsp; &nbsp; &nbsp;<span class="whitepipe"> &nbsp; | </span>
+	</div>
+	
+	<div id="menu3" class="menu"><a href="file:///E:/HTML/final/attractions.html">Attractions</a> &nbsp; &nbsp; &nbsp;<span class="whitepipe"> &nbsp; | </span>
+	</div>
+	
+	<div id="menu4" class="menu"><a href = "contactus_v2.html"</a>Contact Us
+	</div>
+</div>
+
+<hr style = "margin-left:143px; margin-right:143px;border-top: 1px dashed #020390;">
+<div style ="margin-left:140px" id="displayCopyRight">
+</div>
+</body>
+</html>
