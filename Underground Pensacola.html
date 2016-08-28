@@ -19,19 +19,19 @@ function copyRight() {
 
 function overButton(img)
 {
-	buttonImg = "pen_" + img + "_over.jpg"
+	buttonImg = "./Images/pen_" + img + "_over.jpg"
 	document.getElementById(img).src=buttonImg
 }
 
 function downButton(img)
 {
-	buttonImg = "pen_" + img + "_down.jpg"
+	buttonImg = "./Images/pen_" + img + "_down.jpg"
 	document.getElementById(img).src=buttonImg
 }
 
 function upButton(img)
 {
-	buttonImg = "pen_" + img + "_up.jpg"
+	buttonImg = "./Images/pen_" + img + "_up.jpg"
 	document.getElementById(img).src=buttonImg
 }
 
@@ -87,33 +87,32 @@ function upButton(img)
 </head>
 
 <body onload="copyRight()"><header style="text-align: center">
-	<img src="./Underground Pensacola_files/pensacola-bannerv3.jpg" width="1600" height="571" alt="Pensacola"></br>
+	<img src="./Images/pensacola-bannerv3.jpg" width="1600" height="571" alt="Pensacola"></br>
 <!-- Main Menu -->
 <div class="container-fluid">		
 <div class="row">
 <ul class = "menu2">
-	<a href ="Underground Pensacola.html"><li><img src = "pen_home_up.jpg" width = "198" height = "92" id = "home" alt = "home" onMouseOver = "overButton('home')" onMouseDown = "downButton('home')"
+	<a href ="Underground Pensacola.html"><li><img src = "./Images/pen_home_up.jpg" width = "198" height = "92" id = "home" alt = "home" onMouseOver = "overButton('home')" onMouseDown = "downButton('home')"
 	onMouseUp = "upButton('home')" onMouseOut = "upButton('home')"></li></a>
 	
-	<a href ="activities_v2.html"><li><img src = "pen_activities_up.jpg" width = "198" height = "92" id = "activities" alt = "nature center" onMouseOver = "overButton('activities')" onMouseDown = "downButton('activities')"
+	<a href ="activities_v2.html"><li><img src = "./Images/pen_activities_up.jpg" width = "198" height = "92" id = "activities" alt = "nature center" onMouseOver = "overButton('activities')" onMouseDown = "downButton('activities')"
 	onMouseUp = "downButton('activities')" onMouseOut = "upButton('activities')"/></li></a>
 	
-	<a href ="music_v2.html"><li><img src = "pen_music_up.jpg" width = "198" height = "92" id = "music" alt = "nature center" onMouseOver = "overButton('music')" onMouseDown = "downButton('music')"
+	<a href ="music_v2.html"><li><img src = "./Images/pen_music_up.jpg" width = "198" height = "92" id = "music" alt = "nature center" onMouseOver = "overButton('music')" onMouseDown = "downButton('music')"
 	onMouseUp = "downButton('music')" onMouseOut = "upButton('music')"/></li></a>
 	
-	<a href ="dining_v2.html"><li><img src = "pen_dining_up.jpg" width = "198" height = "92" id = "dining" alt = "nature center" onMouseOver = "overButton('dining')" onMouseDown = "downButton('dining')"
+	<a href ="dining_v2.html"><li><img src = "./Images/pen_dining_up.jpg" width = "198" height = "92" id = "dining" alt = "nature center" onMouseOver = "overButton('dining')" onMouseDown = "downButton('dining')"
 	onMouseUp = "downButton('dining')" onMouseOut = "upButton('dining')"/></li></a>
 	
-	<a href ="attractions.html"><li><img src = "pen_attractions_up.jpg" width = "198" height = "92" id = "attractions" alt = "nature center" onMouseOver = "overButton('attractions')" onMouseDown = "downButton('attractions')"
+	<a href ="attractions.html"><li><img src = "./Images/pen_attractions_up.jpg" width = "198" height = "92" id = "attractions" alt = "nature center" onMouseOver = "overButton('attractions')" onMouseDown = "downButton('attractions')"
 	onMouseUp = "downButton('attractions')" onMouseOut = "upButton('attractions')"/></li></a>
 	
-	<a href ="contactus_v2.html"><li><img src = "pen_contact_up.jpg" width = "198" height = "92" id = "contact" alt = "nature center" onMouseOver = "overButton('contact')" onMouseDown = "downButton('contact')"
+	<a href ="contactus_v2.html"><li><img src = "./Images/pen_contact_up.jpg" width = "198" height = "92" id = "contact" alt = "nature center" onMouseOver = "overButton('contact')" onMouseDown = "downButton('contact')"
 	onMouseUp = "downButton('contact')" onMouseOut = "upButton('contact')"/></li></a>		
 </ul>
 </div>
 </div>
 <br style="clear:left">	
-
 
 <!-- Activities Row -->
 <div class="container-fluid">
@@ -181,7 +180,6 @@ Your browser does not support the video tag.
 </div>
 <br style="clear:right">	
 <p><a href="file:///E:/HTML/Test3/test2_v2.html#banner">Back to top</a></p>
-
 
 <footer>
 <!--Bottom Menu ----------------------------------------------------------------------->
