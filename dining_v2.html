@@ -3,33 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <title>Dining</title>
-<script type="text/javascript">
-<!--Hide from old browsers
-function copyRight() {
-	var lastModDate = document.lastModified
-	var lastModDate = lastModDate.substring(0,10)
-	displayCopyRight.innerHTML = "<p style='font-size:8pt; font-weight:bold;'> The URL of this document is" + document.URL+"<br />Midwest Bridal Expo"+"<br />This document was last modified" + lastModDate+ ".</p>"
-}
-
-function overButton(img)
-{
-	buttonImg = "pen_" + img + "_over.jpg"
-	document.getElementById(img).src=buttonImg
-}
-
-function downButton(img)
-{
-	buttonImg = "pen_" + img + "_down.jpg"
-	document.getElementById(img).src=buttonImg
-}
-
-function upButton(img)
-{
-	buttonImg = "pen_" + img + "_up.jpg"
-	document.getElementById(img).src=buttonImg
-}
--->
-</script>
+<script type="text/javascript" src="scripts/menu.js"></script>
 <style type="text/css">
 <!--
 a		{text-decoration: none;
@@ -98,68 +72,29 @@ li	{display:inline-block}
 </head>
 <header style = "text-align: center">
 <a id="banner"></a>
-	<img src="pensacola-bannerv3.jpg" width= "1600" height= "571" alt = "Pensacola"/>
+	<img src="./Images/pensacola-bannerv3.jpg" width= "1600" height= "571" alt = "Pensacola"/>
 <div id = "buttonbar">
 <ul class = "menu2">
-	<a href ="Underground Pensacola.html"><li><img src = "pen_home_up.jpg" width = "198" height = "92" id = "home" alt = "home" onMouseOver = "overButton('home')" onMouseDown = "downButton('home')"
+	<a href ="Underground Pensacola.html"><li><img src = "./Images/pen_home_up.jpg" width = "198" height = "92" id = "home" alt = "home" onMouseOver = "overButton('home')" onMouseDown = "downButton('home')"
 	onMouseUp = "upButton('home')" onMouseOut = "upButton('home')"></li></a>
 	
-	<a href ="activities_v2.html"><li><img src = "pen_activities_up.jpg" width = "198" height = "92" id = "activities" alt = "nature center" onMouseOver = "overButton('activities')" onMouseDown = "downButton('activities')"
+	<a href ="activities_v2.html"><li><img src = "./Images/pen_activities_up.jpg" width = "198" height = "92" id = "activities" alt = "nature center" onMouseOver = "overButton('activities')" onMouseDown = "downButton('activities')"
 	onMouseUp = "downButton('activities')" onMouseOut = "upButton('activities')"/></li></a>
 	
-	<a href ="music_v2.html"><li><img src = "pen_music_up.jpg" width = "198" height = "92" id = "music" alt = "nature center" onMouseOver = "overButton('music')" onMouseDown = "downButton('music')"
+	<a href ="music_v2.html"><li><img src = "./Images/pen_music_up.jpg" width = "198" height = "92" id = "music" alt = "nature center" onMouseOver = "overButton('music')" onMouseDown = "downButton('music')"
 	onMouseUp = "downButton('music')" onMouseOut = "upButton('music')"/></li></a>
 	
-	<a href ="dining_v2.html"><li><img src = "pen_dining_up.jpg" width = "198" height = "92" id = "dining" alt = "nature center" onMouseOver = "overButton('dining')" onMouseDown = "downButton('dining')"
+	<a href ="dining_v2.html"><li><img src = "./Images/pen_dining_up.jpg" width = "198" height = "92" id = "dining" alt = "nature center" onMouseOver = "overButton('dining')" onMouseDown = "downButton('dining')"
 	onMouseUp = "downButton('dining')" onMouseOut = "upButton('dining')"/></li></a>
 	
-	<a href ="attractions.html"><li><img src = "pen_attractions_up.jpg" width = "198" height = "92" id = "attractions" alt = "nature center" onMouseOver = "overButton('attractions')" onMouseDown = "downButton('attractions')"
+	<a href ="attractions.html"><li><img src = "./Images/pen_attractions_up.jpg" width = "198" height = "92" id = "attractions" alt = "nature center" onMouseOver = "overButton('attractions')" onMouseDown = "downButton('attractions')"
 	onMouseUp = "downButton('attractions')" onMouseOut = "upButton('attractions')"/></li></a>
 	
-	<a href ="contactus_v2.html"><li><img src = "pen_contact_up.jpg" width = "198" height = "92" id = "contact" alt = "nature center" onMouseOver = "overButton('contact')" onMouseDown = "downButton('contact')"
+	<a href ="contactus_v2.html"><li><img src = "./Images/pen_contact_up.jpg" width = "198" height = "92" id = "contact" alt = "nature center" onMouseOver = "overButton('contact')" onMouseDown = "downButton('contact')"
 	onMouseUp = "downButton('contact')" onMouseOut = "upButton('contact')"/></li></a>		
 </ul>
 </div>	
-<!--Top Menu 
-<div id="menubar">
-	<div id="menu1" class="menu">Activities/Events &nbsp; &nbsp;<span class="whitepipe"> &nbsp; | </span>
-	<ul>
-		<li><a href="activities_v2.html">McGuires Run</a></li>
-		<li><a href="activities_v2.html">Blue Angels</a></li>
-		<li><a href="activities_v2.html">Beach</a></li>
-    </ul>
-	</div>
 
-	<div id="menu2" class="menu">Music/Dance &nbsp; &nbsp; &nbsp;<span class="whitepipe"> &nbsp; | </span>
-	<ul>
-    	<li><a href="music_v2.html">Seville</a></li>
-    	<li><a href="music_v2.html">Blues Traveler</a></li>
-		<li><a href="music_v2.html">Insane Clown Posse</a></li>
-    </ul>
-	</div>
-
-	<div id="menu3" class="menu">Dining &nbsp; &nbsp; &nbsp;<span class="whitepipe"> &nbsp; | </span>
-	<ul>
-    	<li><a href="dining_v2.html">Rodizio Grill</a></li>
-    	<li><a href="dining_v2.html">Coach N Four</a></li>
-		<li><a href="dining_v2.html">Fish House</a></li>
-    </ul>
-	</div>
-	
-	<div id="menu4" class="menu"><a href = "attractions.html">Attractions</a> &nbsp; &nbsp; &nbsp;<span class="whitepipe"> &nbsp; | </span>
-	<ul>
-    	<li><a href="attractions.html">Dolphins</a></li>
-    	<li><a href="attractions.html">Fort Pickens</a></li>
-		<li><a href="attractions.html">Fishing</a></li>
-    </ul>
-	</div>
-	
-	<div id="menu4" class="menu"><a href = "contactus_v2.html"</a>Contact Us
-	<ul>
-    </ul>
-	</div>
-</div>
--->
 </header>
 <p style="float:right; margin-right:150px; color:#FF0000"><a href ="test2_v2.html">Back to Homepage</a></p>
 <br style = "clear: both">
@@ -167,7 +102,7 @@ li	{display:inline-block}
 <body onload="copyRight()">
 
 <h3>Rodizio Grill</h3>
-<p><img class="align-left" src="rodizio.jpg" width= "384" height= "216" alt = "Mcguires run"/></p>
+<p><img class="align-left" src="./Images/rodizio.jpg" width= "384" height= "216" alt = "Mcguires run"/></p>
 		<p>Outpost of a <a href="http://werunwild.com/events/event/mcguires-5k/">Brazilian steakhouse</a> 
 		chain offering skewered meats carved tableside plus a salad bar.</p>
 <br />
@@ -236,37 +171,16 @@ li	{display:inline-block}
 </table>	
 
 <h3>Coach N Four</h3>
-<p><img class="align-left" src="coachnfour.png" width= "384" height= "216" alt = "Mcguires run"/></p>
+<p><img class="align-left" src="./Images/coachnfour.png" width= "384" height= "216" alt = "Mcguires run"/></p>
 		<p>Veteran, Old West-inspired <a href="http://werunwild.com/events/event/mcguires-5k/">chophouse</a>
 		serving up grilled meat, seafood & drinks in wood-paneled digs.</p>
 <br style="clear:left;" />
 
 <h3>Fish House</h3>
-<p><img class="align-left" src="fishhouse.jpg" width= "384" height= "216" alt = "Pensacola Beach"/></p>
+<p><img class="align-left" src="./Images/fishhouse.jpg" width= "384" height= "216" alt = "Pensacola Beach"/></p>
 		<p>This <a href="http://werunwild.com/events/event/mcguires-5k/">harborside</a> go-to specializes 
 		in seafood & grits & includes a bar with live music nightly.</p>
 <br style = "clear:left" />
 
- 
- <!--Bottom Menu ----------------------------------------------------------------------->
-<div id="menubar">
-	<div id="menu1" class="menu"><a href= "activities_v2.html">Activities/Events</a> &nbsp; &nbsp;<span class="whitepipe"> &nbsp; | </span>
-	</div>
-
-	<div id="menu2" class="menu"><a href="music_v2.html">Music/Dance</a> &nbsp; &nbsp; &nbsp;<span class="whitepipe"> &nbsp; | </span>
-	</div>
-
-	<div id="menu3" class="menu"><a href="dining_v2.html">Dining</a> &nbsp; &nbsp; &nbsp;<span class="whitepipe"> &nbsp; | </span>
-	</div>
-	
-
-	
-	<div id="menu4" class="menu"><a href = "contactus_v2.html"</a>Contact Us
-	</div>
-</div>
-
-<hr style = "margin-left:143px; margin-right:143px;border-top: 1px dashed #020390;">
-<div style ="margin-left:140px" id="displayCopyRight">
-</div>
 </body>
 </html>

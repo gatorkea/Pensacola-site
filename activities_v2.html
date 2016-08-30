@@ -3,7 +3,9 @@
 <head>
 <meta charset="utf-8" />
 <title>Activities</title>
+<script type="text/javascript" src="scripts/menu.js"></script>
 <script type="text/javascript">
+
 <!--Hide from old browsers
 
 	var today = new Date()
@@ -44,30 +46,6 @@ function scrollingMsg2()
 		beginPos=0
 		}
 	window.setTimeout("scrollingMsg2()", 300)
-}
-
-function copyRight() {
-	var lastModDate = document.lastModified
-	var lastModDate = lastModDate.substring(0,10)
-	displayCopyRight.innerHTML = "<p style='font-size:8pt; font-weight:bold;'> The URL of this document is" + document.URL+"<br />Midwest Bridal Expo"+"<br />This document was last modified" + lastModDate+ ".</p>"
-}
-
-function overButton(img)
-{
-	buttonImg = "pen_" + img + "_over.jpg"
-	document.getElementById(img).src=buttonImg
-}
-
-function downButton(img)
-{
-	buttonImg = "pen_" + img + "_down.jpg"
-	document.getElementById(img).src=buttonImg
-}
-
-function upButton(img)
-{
-	buttonImg = "pen_" + img + "_up.jpg"
-	document.getElementById(img).src=buttonImg
 }
 
 function popupCaption(evnt, currElement)
@@ -205,13 +183,15 @@ li	{display:inline-block}
 	margin-right: 5px;}
 
 #spd {
-position: absolute;
+position: relative;
+right: 200px;
 visibility: hidden;
 display: inline-block;}
 	
 	
 #nas {
-position: absolute;
+position: relative;
+visibility: 200px;
 visibility: hidden;
 display: inline-block;}
 
@@ -242,87 +222,46 @@ display: inline-block;}
 </head>
 <header style = "text-align: center">
 <a id="banner"></a>
-	<img src="pensacola-bannerv3.jpg" width= "1600" height= "571" alt = "Pensacola"/>
+	<img src="./Images/pensacola-bannerv3.jpg" width= "1600" height= "571" alt = "Pensacola"/>
 	
 <div id = "buttonbar">
 <ul class = "menu2">
-	<a href ="Underground Pensacola.html"><li><img src = "pen_home_up.jpg" width = "198" height = "92" id = "home" alt = "home" onMouseOver = "overButton('home')" onMouseDown = "downButton('home')"
+	<a href ="Underground Pensacola.html"><li><img src = "./Images/pen_home_up.jpg" width = "198" height = "92" id = "home" alt = "home" onMouseOver = "overButton('home')" onMouseDown = "downButton('home')"
 	onMouseUp = "upButton('home')" onMouseOut = "upButton('home')"></li></a>
 	
-	<a href ="activities_v2.html"><li><img src = "pen_activities_up.jpg" width = "198" height = "92" id = "activities" alt = "nature center" onMouseOver = "overButton('activities')" onMouseDown = "downButton('activities')"
+	<a href ="activities_v2.html"><li><img src = "./Images/pen_activities_up.jpg" width = "198" height = "92" id = "activities" alt = "nature center" onMouseOver = "overButton('activities')" onMouseDown = "downButton('activities')"
 	onMouseUp = "downButton('activities')" onMouseOut = "upButton('activities')"/></li></a>
 	
-	<a href ="music_v2.html"><li><img src = "pen_music_up.jpg" width = "198" height = "92" id = "music" alt = "nature center" onMouseOver = "overButton('music')" onMouseDown = "downButton('music')"
+	<a href ="music_v2.html"><li><img src = "./Images/pen_music_up.jpg" width = "198" height = "92" id = "music" alt = "nature center" onMouseOver = "overButton('music')" onMouseDown = "downButton('music')"
 	onMouseUp = "downButton('music')" onMouseOut = "upButton('music')"/></li></a>
 	
-	<a href ="dining_v2.html"><li><img src = "pen_dining_up.jpg" width = "198" height = "92" id = "dining" alt = "nature center" onMouseOver = "overButton('dining')" onMouseDown = "downButton('dining')"
+	<a href ="dining_v2.html"><li><img src = "./Images/pen_dining_up.jpg" width = "198" height = "92" id = "dining" alt = "nature center" onMouseOver = "overButton('dining')" onMouseDown = "downButton('dining')"
 	onMouseUp = "downButton('dining')" onMouseOut = "upButton('dining')"/></li></a>
 	
-	<a href ="attractions.html"><li><img src = "pen_attractions_up.jpg" width = "198" height = "92" id = "attractions" alt = "nature center" onMouseOver = "overButton('attractions')" onMouseDown = "downButton('attractions')"
+	<a href ="attractions.html"><li><img src = "./Images/pen_attractions_up.jpg" width = "198" height = "92" id = "attractions" alt = "nature center" onMouseOver = "overButton('attractions')" onMouseDown = "downButton('attractions')"
 	onMouseUp = "downButton('attractions')" onMouseOut = "upButton('attractions')"/></li></a>
 	
-	<a href ="contactus_v2.html"><li><img src = "pen_contact_up.jpg" width = "198" height = "92" id = "contact" alt = "nature center" onMouseOver = "overButton('contact')" onMouseDown = "downButton('contact')"
+	<a href ="contactus_v2.html"><li><img src = "./Images/pen_contact_up.jpg" width = "198" height = "92" id = "contact" alt = "nature center" onMouseOver = "overButton('contact')" onMouseDown = "downButton('contact')"
 	onMouseUp = "downButton('contact')" onMouseOut = "upButton('contact')"/></li></a>		
 </ul>
 </div>	
 	
-<!--
-<div id="menubar">
-	<div id="menu1" class="menu">Activities/Events &nbsp; &nbsp;<span class="whitepipe"> &nbsp; | </span>
-	<ul>
-		<li><a href="activities_v2.html">McGuires Run</a></li>
-		<li><a href="activities_v2.html">Blue Angels</a></li>
-		<li><a href="activities_v2.html">Beach</a></li>
-    </ul>
-	</div>
-
-	<div id="menu2" class="menu">Music/Dance &nbsp; &nbsp; &nbsp;<span class="whitepipe"> &nbsp; | </span>
-	<ul>
-    	<li><a href="music_v2.html">Seville</a></li>
-    	<li><a href="music_v2.html">Blues Traveler</a></li>
-		<li><a href="music_v2.html">Insane Clown Posse</a></li>
-    </ul>
-	</div>
-
-	<div id="menu3" class="menu">Dining &nbsp; &nbsp; &nbsp;<span class="whitepipe"> &nbsp; | </span>
-	<ul>
-    	<li><a href="dining_v2.html">Rodizio Grill</a></li>
-    	<li><a href="dining_v2.html">Coach N Four</a></li>
-		<li><a href="dining_v2.html">Fish House</a></li>
-    </ul>
-	</div>
-	
-	<div id="menu4" class="menu"><a href = "attractions.html">Attractions</a> &nbsp; &nbsp; &nbsp;<span class="whitepipe"> &nbsp; | </span>
-	<ul>
-    	<li><a href="dining_v2.html">Dolphins</a></li>
-    	<li><a href="dining_v2.html">Fort Pickens</a></li>
-		<li><a href="dining_v2.html">Fishing</a></li>
-    </ul>
-	</div>
-	
-	<div id="menu5" class="menu"><a href = "contactus_v2.html"</a>Contact Us
-	<ul>
-    </ul>
-	</div>
-</div>
-</header>
--->
 </header>
 <p style="float:right; margin-right:150px; color:#FF0000"><a href ="test2_v2.html">Back to Homepage</a></p>
 <br style = "clear: both">
 <h1>Activities/Events</h1>
-<body onload="copyRight();scrollingMsg1();scrollingMsg2()">
+<body onload="scrollingMsg1();scrollingMsg2()">
 <br style = "clear: right">
 
 <br style = "clear: right">
-
+<!-- Event 1 -->
 <h3>Mcguires Run</h3>
 
 <form id="msgForm1" style = "margin-left:140px">
 	<p style="text-align:center"><input type="text" name="scrollingMsg1" size="55" /> </p>
 </form>
 
-<p style = "margin-right:150px"><img  src="activities_mcgrun.jpg" id = "activityImage" width= "384" height= "216" alt = "Mcguires run"/>
+<p style = "margin-right:150px"><img  src="./Images/activities_mcgrun.jpg" id = "activityImage" width= "384" height= "216" alt = "Mcguires run"/>
 		The 38th Annual <a href="http://werunwild.com/events/event/mcguires-5k/">McGuire’s</a> St. <a href = "#" onMouseOver= "popupCaption(event,'spd')" onMouseOut ="popupCaption(event,'spd')">
 		Patrick’s Day</a> 5k Run starts and finishes at McGuire’s Irish Pub 
 		in downtown Pensacola.Participants must be able to run or walk the 3.1 mile (5k) course in under 
@@ -342,7 +281,7 @@ Happy Saint Patrick's day!
 	<p style="text-align:center"><input type="text" name="scrollingMsg2" size="55" /> </p>
 </form>
 
-<p style = "margin-right:150px"><img src="activities_ba.jpg" id = "activityImage2" width= "384" height= "216" alt = "Blue Angels"/>
+<p style = "margin-right:150px"><img src="./Images/activities_ba.jpg" id = "activityImage2" width= "384" height= "216" alt = "Blue Angels"/>
 		Come watch the <a href="http://www.visitpensacola.com/landing/blue-angels">Blue Angels</a> 
 		fly. The world-famous Blue Angels are based at NAS Pensacola, and can be seen practicing over 
 		the Museum at <a href = "#" onMouseOver= "popupCaption2(event,'nas')" onMouseOut ="popupCaption2(event,'nas')">NAS Pensacola</a> 
@@ -355,7 +294,7 @@ Come see the Blue Angels fly at NAS Naval air station!
 <br style="clear:left;" />
 
 <h3>Beach</h3>
-<p style = "margin-right:150px"><img class="align-left" src="activities_beach.jpg" id = "activityImage3" width= "384" height= "216" alt = "Pensacola Beach"/>
+<p style = "margin-right:150px"><img class="align-left" src="./Images/activities_beach.jpg" id = "activityImage3" width= "384" height= "216" alt = "Pensacola Beach"/>
 		Enjoy some of the whitest <a href="http://www.visitpensacolabeach.com/">beaches</a> in 
 		the <a href = "#" onMouseOver= "popupCaption3(event,'earth')" onMouseOut ="popupCaption3(event,'earth')">world</a>, your 
 		family and friends can experience all the Florida Gulf Coast has to offer. Pensacola Beach is world famous 
@@ -366,26 +305,3 @@ Come visit earth while it's still breathing!
 </div>
 
 <br style= "clear:left">
-<!--Bottom Menu ----------------------------------------------------------------------->
-<div id="menubar">
-	<div id="menu1" class="menu"><a href= "activities_v2.html">Activities/Events</a> &nbsp; &nbsp;<span class="whitepipe"> &nbsp; | </span>
-	</div>
-
-	<div id="menu2" class="menu"><a href="music_v2.html">Music/Dance</a> &nbsp; &nbsp; &nbsp;<span class="whitepipe"> &nbsp; | </span>
-	</div>
-
-	<div id="menu3" class="menu"><a href="dining_v2.html">Dining</a> &nbsp; &nbsp; &nbsp;<span class="whitepipe"> &nbsp; | </span>
-	</div>
-	
-	<div id="menu3" class="menu"><a href="file:///E:/HTML/final/attractions.html">Attractions</a> &nbsp; &nbsp; &nbsp;<span class="whitepipe"> &nbsp; | </span>
-	</div>
-	
-	<div id="menu4" class="menu"><a href = "contactus_v2.html"</a>Contact Us
-	</div>
-</div>
-
-<hr style = "margin-left:143px; margin-right:143px;border-top: 1px dashed #020390;">
-<div style ="margin-left:140px" id="displayCopyRight">
-</div>
-</body>
-</html>
