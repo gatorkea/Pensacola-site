@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<!-- saved from url=(0035)file:///E:/HTML/Test3/test2_v2.html -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width = device-width, initial-scale = 1">
@@ -11,80 +12,22 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 <link rel="stylesheet" type ="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script type="text/javascript" src="scripts/menu.js"></script>
-<script>
-	$(document).ready(function() {
-  		$.simpleWeather({
-   		location: 'Austin, TX',
-    	woeid: '',
-    	unit: 'f',
-    	success: function(weather) {
-     	 html = '<p>'+weather.temp+'&deg;'+weather.units.temp+'</p>';
-  
-      $("#weather").html(html);
-    },
-    error: function(error) {
-      $("#weather").html('<p>'+error+'</p>');
-    }
-  });
-});
-</script>
+
 <style type="text/css">
 <!-- 
-	
-	body 	{background-color:#d0d0d0;}
 	video	{padding:20px}
 	
-    #menubar {background-color:#303032;
-			  margin-left: 144px;
-			  margin-right: 143px;
-			  margin-top: -5px;
-			  margin-bottom:0px;
-			  color:blue;
-			  font-size:x-large;
-			  height: 75px}
-	
-	#buttonbar {background-color:green;
-			    margin-left: 144px;
-			    margin-right: 143px;
-			    margin-top: -5px;
-			    margin-bottom:0px;}
-	
-	.menu	{float: left; padding: 0.8em 3em 0.1em 0.5em;
-			 cursor: default}
-	
-	.menu2	{list-style:none;
-			 }
-	
-	.menu2 li {display:inline-block;
-			   margin-left:20px}
-	
-	.menu ul {display: none;  background-color:white;
-			  list-style: none;
-			  margin: 2px 5px 150px 0px;}
-	.menu ul li {display:block; font-size:large;
-			     padding:0.2em}
-
-	div 		{list-style:none!important;}
-
-	div.menu:hover ul	{margin: 0; padding: 0; display:block;
-						 background-color:white; color:#303032}
-	div.menu ul li: hover {background-color: #cccccc}
-	
-	.whitepipe {color: white}
-	
-	p.box		{width: 400px; margin-left:20px;margin-top: 50px;
-				 border-radius: 5px; background-color: white;
-				 padding: 10px; color: #303032}
-	img.posit 	{position: relative; left: 460px; top: -270px}
+	div 	{list-style:none!important;}
 	-->
 </style>
-<link rel="stylesheet" type="text/css" href="./Underground Pensacola_files/test2.css">	
+
+<link rel="stylesheet" type="text/css" href="./styles/menu.css">	
 </head>
 
 <body>
 <header style="text-align: center">
 	<img src="./Images/pensacola-bannerv3.jpg" class = "img-responsive center-block" alt="Pensacola"></br>
-<div id="weather"></div>
+
 <!-- Main Menu -->
 <div class="container">		
 <div class="row">
