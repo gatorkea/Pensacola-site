@@ -30,6 +30,7 @@
 </script>
 <style type="text/css">
 <!-- 
+	
 	body 	{background-color:#d0d0d0;}
 	video	{padding:20px}
 	
@@ -62,7 +63,9 @@
 			  margin: 2px 5px 150px 0px;}
 	.menu ul li {display:block; font-size:large;
 			     padding:0.2em}
-				 
+
+	div 		{list-style:none!important;}
+
 	div.menu:hover ul	{margin: 0; padding: 0; display:block;
 						 background-color:white; color:#303032}
 	div.menu ul li: hover {background-color: #cccccc}
@@ -78,32 +81,34 @@
 <link rel="stylesheet" type="text/css" href="./Underground Pensacola_files/test2.css">	
 </head>
 
-<body onload="copyRight()"><header style="text-align: center">
+<body><header style="text-align: center">
 	<img src="./Images/pensacola-bannerv3.jpg" width="1600" height="571" alt="Pensacola"></br>
 <div id="weather"></div>
 <!-- Main Menu -->
-<div class="container-fluid">		
+<div class="container">		
 <div class="row">
-<div>
-<ul class = "menu2">
+<div class="col-lg-2 col-md-4">
 	<a href ="Underground Pensacola.html"><li><img src = "./Images/pen_home_up.jpg" width = "198" height = "92" id = "home" alt = "home" onMouseOver = "overButton('home')" onMouseDown = "downButton('home')"
 	onMouseUp = "upButton('home')" onMouseOut = "upButton('home')"></li></a>
-	
-	<a href ="activities_v2.html"><li><img src = "./Images/pen_activities_up.jpg" width = "198" height = "92" id = "activities" alt = "nature center" onMouseOver = "overButton('activities')" onMouseDown = "downButton('activities')"
-	onMouseUp = "downButton('activities')" onMouseOut = "upButton('activities')"/></li></a>
-	
+</div>
+<div class="col-lg-2 col-md-4">	
+	<a href ="activities_v2.html"><li><img src = "./Images/pen_activities_up.jpg" width = "198" height = "92" id = "activities" alt = "nature center" onMouseOver = "overButton('activities')" onMouseDown = "downButton('activities')" onMouseUp = "downButton('activities')" onMouseOut = "upButton('activities')"/></li></a>
+</div>
+<div class="col-lg-2 col-md-4">	
 	<a href ="music_v2.html"><li><img src = "./Images/pen_music_up.jpg" width = "198" height = "92" id = "music" alt = "nature center" onMouseOver = "overButton('music')" onMouseDown = "downButton('music')"
 	onMouseUp = "downButton('music')" onMouseOut = "upButton('music')"/></li></a>
-	
+</div>
+<div class="col-lg-2 col-md-4">	
 	<a href ="dining_v2.html"><li><img src = "./Images/pen_dining_up.jpg" width = "198" height = "92" id = "dining" alt = "nature center" onMouseOver = "overButton('dining')" onMouseDown = "downButton('dining')"
 	onMouseUp = "downButton('dining')" onMouseOut = "upButton('dining')"/></li></a>
-	
+</div>
+<div class="col-lg-2 col-md-4">	
 	<a href ="attractions.html"><li><img src = "./Images/pen_attractions_up.jpg" width = "198" height = "92" id = "attractions" alt = "nature center" onMouseOver = "overButton('attractions')" onMouseDown = "downButton('attractions')"
 	onMouseUp = "downButton('attractions')" onMouseOut = "upButton('attractions')"/></li></a>
-	
+</div>
+<div class="col-lg-2 col-md-4">	
 	<a href ="contactus_v2.html"><li><img src = "./Images/pen_contact_up.jpg" width = "198" height = "92" id = "contact" alt = "nature center" onMouseOver = "overButton('contact')" onMouseDown = "downButton('contact')"
 	onMouseUp = "downButton('contact')" onMouseOut = "upButton('contact')"/></li></a>		
-</ul>
 </div>
 </div>
 </div>
